@@ -1,13 +1,4 @@
-@import url(../vendor/normalize.css);
-/*
-@import url(../blocks/header.css);
-@import url(../blocks/main.css);
-@import url(../blocks/footer.css);
-
-.page {
-  background-color: #2a2c2f;
-}
-*/
+/* 1. RESET Y ESTILOS GLOBALES */
 * {
     box-sizing: border-box; /* Facilita el cálculo de tamaños */
     margin: 0;
@@ -16,11 +7,11 @@
 
 body {
     /* El color oscuro del fondo (similar a #242C2F) */
-    background-color: #2a2c2f; 
+    background-color: #242C2F; 
     /* Color de texto claro para contraste */
-    color: #fff; 
+    color: #f0f0f0; 
     /* Fuente por defecto. Figma parece usar una sans-serif moderna, como Inter o Roboto */
-    font-family: 'Inter', sans-serif; 
+    font-family: 'Arial', sans-serif; 
     line-height: 1.6;
     display: flex; /* Para centrar el contenedor en la pantalla */
     justify-content: center;
@@ -44,14 +35,10 @@ body {
 }
 
 .logo {
-    /* Las dimensiones de la imagen, según el diseño */
-    width: 255px; /* Redondeamos 254.84px */
-    height: 89px;  /* Redondeamos 88.94px */
-    
-    /* Para centrar la imagen dentro del contenedor, usamos: */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 0.8em; /* Un poco más pequeño */
+    font-weight: normal; /* No muy grueso */
+    letter-spacing: 2px; /* Espaciado entre letras como en el diseño */
+    color: #AAAAAA; /* Gris claro */
 }
 
 /* 4. ESTILOS DE LA SECCIÓN PRINCIPAL (TITULAR) */
