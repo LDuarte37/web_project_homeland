@@ -1,20 +1,3 @@
-/* General styles and typography */
-.body {
-  background-color: #2a2c2f;
-}
-
-.page {
-  margin: 0;
-  font-family: "Inter", Arial, sans-serif;
-  background-color: #2a2c2f;
-  color: #fff;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 48px;
-  box-sizing: border-box;
-}
-
-/* Header section */
 .header {
   min-height: 88.94px;
   padding-top: 34px;
