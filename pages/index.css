@@ -1,123 +1,109 @@
 @import url(../vendor/normalize.css);
-/*
 @import url(../blocks/header.css);
-@import url(../blocks/main.css);
+@import url(../blocks/lead.css);
+@import url(../blocks/intro.css);
 @import url(../blocks/footer.css);
 
+/* General styles and typography */
+.body{
+    background-color: #2A2C2F;
+}
+
 .page {
-  background-color: #2a2c2f;
-}
-*/
-* {
-    box-sizing: border-box; /* Facilita el cálculo de tamaños */
     margin: 0;
-    padding: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #2A2C2F;
+    color: #fff;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 48px;
+    box-sizing: border-box;
 }
 
-body {
-    /* El color oscuro del fondo (similar a #242C2F) */
-    background-color: #2a2c2f; 
-    /* Color de texto claro para contraste */
-    color: #fff; 
-    /* Fuente por defecto. Figma parece usar una sans-serif moderna, como Inter o Roboto */
-    font-family: 'Inter', sans-serif; 
-    line-height: 1.6;
-    display: flex; /* Para centrar el contenedor en la pantalla */
-    justify-content: center;
-}
-
-/* 2. CONTENEDOR PRINCIPAL */
-.container {
-    /* Definimos un ancho máximo similar al de Figma (1280px en el ejemplo) */
-    max-width: 1280px; 
-    width: 100%;
-    /* Añadimos un padding horizontal para que no se pegue a los bordes en pantallas grandes */
-    padding: 0 40px; 
-}
-
-/* 3. ESTILOS DE LA CABECERA Y EL LOGO */
-.header {
-    /* Separación superior */
-    padding-top: 60px; 
-    /* Separación inferior para el titular */
-    margin-bottom: 50px; 
-}
-
-.logo {
-    /* Las dimensiones de la imagen, según el diseño */
-    width: 255px; /* Redondeamos 254.84px */
-    height: 89px;  /* Redondeamos 88.94px */
+/* Media Queries */
+@media (max-width: 768px) {
+    .page {
+        padding: 0 24px;
+    }
     
-    /* Para centrar la imagen dentro del contenedor, usamos: */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    .lead__title {
+        font-size: 50px;
+        line-height: 54px;
+    }
+
+    .lead__subtitle {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .intro__title {
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .intro__text,
+    .intro__author {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .intro__text-note {
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 
-/* 4. ESTILOS DE LA SECCIÓN PRINCIPAL (TITULAR) */
-.hero h2 {
-    font-size: 4em; /* Titular grande y llamativo */
-    font-weight: 900; /* Extra-negrita */
-    margin-bottom: 20px;
-    line-height: 1.1;
-}
+@media (max-width: 320px) {
+    .page {
+        padding: 0 16px;
+    }
 
-.hero .subtitle {
-    font-size: 1.2em;
-    color: #CCCCCC; /* Un gris un poco más claro que el texto normal */
-    margin-bottom: 40px;
-}
+    .header {
+        padding-top: 16px;
+        min-height: auto;
+    }
 
-/* 5. ESTILOS DE IMAGEN */
-.main-image {
-    margin: 40px 0;
-    /* Ajusta el ancho de la figura al contenedor */
-    width: 100%; 
-}
+    .header__logo img {
+        height: 60px;
+        width: auto;
+    }
 
-.main-image img {
-    /* Asegura que la imagen ocupe todo el ancho */
-    width: 100%; 
-    height: auto;
-    /* Un pequeño margen para simular un borde */
-    display: block; 
-}
+    .lead {
+        padding-top: 64px;
+    }
 
-/* 6. SECCIÓN DE DETALLES Y TEXTO */
-.details h3 {
-    font-size: 2.2em; /* Titular de sub-sección */
-    font-weight: 700;
-    margin-top: 60px;
-    margin-bottom: 40px;
-}
+    .lead__title {
+        font-size: 32px;
+        line-height: 35px;
+        max-width: 288px;
+        margin: 0 auto;
+    }
 
-/* Limitamos el ancho del bloque de texto para mejor lectura, como en el diseño */
-.text-block {
-    max-width: 800px; 
-}
+    .lead__subtitle {
+        font-size: 18px;
+        line-height: 20px;
+        margin: 24px auto 32px;
+    }
 
-.text-block p {
-    font-size: 1.1em;
-    margin-bottom: 25px;
-    /* Un color ligeramente más claro para el texto principal */
-    color: #e0e0e0; 
-}
+    .intro__title {
+        font-size: 28px;
+        line-height: 32px;
+    }
 
-.quote {
-    font-style: italic;
-    font-weight: bold;
-    color: #FFFFFF; /* La cita se destaca */
-    text-align: right;
-    margin-top: 30px;
-    margin-right: 0px; 
-}
+    .intro__text,
+    .intro__author {
+        font-size: 16px;
+        line-height: 24px;
+    }
 
-.footer-text {
-    max-width: 800px; 
-    margin-top: 60px;
-    padding-bottom: 100px; /* Espacio al final de la página */
-    border-top: 1px solid #3a3a3a; /* Línea separadora sutil */
-    padding-top: 40px;
-    font-size: 0.9em;
-    color: #AAAAAA;
+    .intro__text-note {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer {
+        justify-content: center;
+        text-align: center;
+        min-height: 50px;
+    }
 }

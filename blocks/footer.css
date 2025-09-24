@@ -1,14 +1,14 @@
+/* Footer section */
 .footer {
-  display: flex;
-  justify-content: center;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.copyright {
-  color: #fff;
-  font-family: Inter;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0%;
-  text-align: right;
+.footer__copyright {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0;
 }

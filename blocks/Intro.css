@@ -1,0 +1,41 @@
+/* Intro section */
+.intro {
+    padding-top: 64px;
+    max-width: 984px;
+    margin: 0;
+    text-align: left;
+}
+
+.intro__title {
+    font-size: 54px;
+    line-height: 58px;
+    font-weight: 900;
+    max-width: 690px;
+    margin: 0;
+}
+
+.intro__content {
+    margin-top: 32px;
+}
+
+.intro__text {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.intro__author {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    text-align: right;
+    margin: 0;
+}
+
+.intro__text-note {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 32px;
+}
