@@ -1,9 +1,14 @@
 .lead {
     text-align: center;
     padding-top: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 980px;
 }
 
 .lead__title {
+    max-width: 640px;
     font-size: 76px;
     line-height: 82px;
     font-weight: 900;
