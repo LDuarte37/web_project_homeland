@@ -1,10 +1,260 @@
-@import url(../vendor/normalize.css);
+/*@import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
 @import url(../blocks/body.css);
 @import url(../blocks/page.css);
+@import url(../blocks/content.css);
 @import url(../blocks/header.css);
 @import url(../blocks/lead.css);
 @import url(../blocks/intro.css);
 @import url(../blocks/photo-layout.css);
 @import url(../blocks/places.css);
-@import url(../blocks/footer.css);
+@import url(../blocks/footer.css);*/
+
+.body {
+  background-color: #2a2c2f;
+  margin: 0;
+}
+
+.page {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #2a2c2f;
+  color: #fff;
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 48px;
+  box-sizing: border-box;
+}
+
+.header {
+  min-height: 88.94px;
+  padding-top: 34px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  height: 89px;
+  width: 255px;
+}
+
+.content {
+    max-width: 1184px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lead {
+    text-align: center;
+    padding-top: 91px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 980px;
+}
+
+.lead__title {
+    max-width: 640px;
+    font-size: 76px;
+    line-height: 82px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.lead__subtitle {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 32px auto 64px;
+    max-width: 640px;
+}
+
+.lead__image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.intro {
+    padding-top: 64px;
+    max-width: 984px;
+    text-align: left;
+}
+
+.intro__title {
+    font-size: 54px;
+    line-height: 58px;
+    font-weight: 900;
+    max-width: 900px;
+    margin: 0;
+}
+
+.intro__content {
+    margin-top: 32px;
+}
+
+.intro__text {
+    max-width: 700px;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.intro__author {
+    max-width: 690px;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    text-align: right;
+    margin: 0;
+}
+
+.intro__text-note {
+    max-width: 670px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-top: 32px;
+}
+
+.photo-grid {
+    max-width: 1184px;
+    margin: 0 auto;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px; 
+}
+
+.photo-grid__item {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+
+.photo-grid__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.places {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin: 90px auto;
+}
+
+.place {
+  display: grid;
+    grid-template-columns: 5fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "title artist"
+        "image description"
+        "button_nft description";
+    gap: 40px 48px;
+    max-width: 984px;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.place__title {
+  grid-area: title;
+
+  margin: 0;
+  width: calc(100% / 2);
+  align-self: flex-end;
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+}
+
+.place__image {
+  grid-area: image;
+
+  width: 460px;
+  height: 460px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.place__artist {
+  grid-area: artist;
+
+  align-self: flex-end;
+}
+
+.place__artist_title {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 12%;
+  text-transform: uppercase;
+}
+
+.place__artist_name {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
+.place__description {
+  grid-area: description;
+}
+
+.place__paragraph {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  letter-spacing: 0%;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.place__button_nft {
+  grid-area: button_nft;
+
+  width: fit-content;
+  height: fit-content;
+  color: #fff;
+  opacity: 1;
+  margin: 0;
+  top: 3236px;
+  left: 151px;
+  border-radius: 4px;
+  padding-top: 13px;
+  padding-right: 20px;
+  padding-bottom: 13px;
+  padding-left: 20px;
+  gap: 10px;
+
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+
+  box-shadow: 5px 5px 10px 0px #00000040;
+}
+
+.footer {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__copyright {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    margin: 0;
+}
