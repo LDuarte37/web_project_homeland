@@ -1,6 +1,7 @@
 .intro {
   padding-top: 64px;
-  max-width: 984px;
+  padding-left: 102px;
+  max-width: 830px;
   text-align: left;
 }
 
@@ -39,4 +40,5 @@
   line-height: 26px;
   font-weight: 400;
   margin-top: 32px;
+  margin-bottom: 0;
 }
