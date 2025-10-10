@@ -8,3 +8,16 @@
   padding: 0 48px;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 768px) {
+  .page {
+    padding: 0 24px;
+    align-items: unset;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .page {
+    padding: 0 16px;
+  }
+}

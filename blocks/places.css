@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
 
-  margin: 90px auto 0;
+  margin: 0 auto;
 }
 
 .place {
@@ -122,4 +122,91 @@
     rgba(0, 58, 123, 0.25) 99.98%
   );
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    /* Desactiva el Grid complejo a 1 columna (apilamiento vertical) */
+    grid-template-columns: 12fr 13fr;
+    grid-template-rows: auto;
+    gap: 32px;
+    max-width: 100%;
+    margin: 36 auto; /* Margen vertical ajustado */
+
+    /* Redefinir las áreas para apilar según la columna de la izquierda:
+           Título, Metadatos/Artista, Imagen, Descripción, Botón */
+    grid-template-areas:
+      "title artist"
+      "image description"
+      "button_nft description";
+  }
+
+  .place__title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .place__image {
+    /* Aseguramos que la imagen ocupe el 100% del ancho apilado */
+    width: 100%;
+    height: auto;
+  }
+
+  .place__artist {
+    /* Asegurar que la metadata se alinea con el resto del contenido */
+    align-self: flex-start;
+    padding-bottom: 0;
+  }
+
+  .place__paragraph {
+    /* Espaciado del párrafo en modo apilado */
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+      .place {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        max-width: 100%;
+
+        grid-template-areas:
+            "title"
+            "artist"
+            "image"
+            "description"
+            "button_nft";
+    }
+
+    .place__title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    
+    .place__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .place__artist_title {
+        font-size: 10px;
+    }
+
+    .place__artist_name {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .place__paragraph {
+        font-size: 16px;
+        line-height: 150%;
+        padding-bottom: 20px;
+    }
+
+    .place__button_nft {
+        padding: 10px 15px;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
 }

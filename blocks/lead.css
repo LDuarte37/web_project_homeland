@@ -29,3 +29,47 @@
   max-width: 100%;
   height: auto;
 }
+
+@media screen and (max-width: 768px) {
+  .lead {
+    padding-top: 64px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .lead__title {
+    font-size: 50px;
+    line-height: 54px;
+  }
+
+  .lead__subtitle {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 24px auto 48px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .lead {
+    padding-top: 36px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .lead__title {
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 100%;
+  }
+
+  .lead__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 20px auto 36px;
+    max-width: 100%;
+  }
+
+  .lead__image {
+    width: 100%;
+  }
+}

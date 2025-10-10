@@ -42,3 +42,61 @@
   margin-top: 32px;
   margin-bottom: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .intro {
+    padding-top: 48px;
+    padding-left: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .intro__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+
+  .intro__author {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro {
+    padding-top: 36px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 36px;
+    max-width: 100%;
+  }
+
+  .intro__content {
+    margin-top: 24px;
+  }
+
+  .intro__text {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 100%;
+  }
+
+  .intro__author {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    max-width: 100%;
+  }
+
+  .intro__text-note {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 24px;
+    max-width: 100%;
+  }
+}
