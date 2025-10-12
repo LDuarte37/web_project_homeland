@@ -50,7 +50,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
-  letter-spacing: 12%;
+  letter-spacing: 12em;
   text-transform: uppercase;
   color: #aaaaaa;
 }
@@ -60,7 +60,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   margin: 0;
 }
 
@@ -71,7 +71,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 163%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .place__paragraph {
@@ -79,7 +79,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 163%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   margin: 0;
   padding-bottom: 25px;
 }
@@ -118,15 +118,12 @@
 
 @media screen and (max-width: 768px) {
   .place {
-    /* Desactiva el Grid complejo a 1 columna (apilamiento vertical) */
     grid-template-columns: 12fr 13fr;
     grid-template-rows: auto;
     gap: 32px;
     max-width: 100%;
-    margin: 36 auto; /* Margen vertical ajustado */
+    margin: 36px auto;
 
-    /* Redefinir las áreas para apilar según la columna de la izquierda:
-           Título, Metadatos/Artista, Imagen, Descripción, Botón */
     grid-template-areas:
       "title artist"
       "image description"
@@ -139,19 +136,16 @@
   }
 
   .place__image {
-    /* Aseguramos que la imagen ocupe el 100% del ancho apilado */
     width: 100%;
     height: auto;
   }
 
   .place__artist {
-    /* Asegurar que la metadata se alinea con el resto del contenido */
     align-self: flex-start;
     padding-bottom: 0;
   }
 
   .place__paragraph {
-    /* Espaciado del párrafo en modo apilado */
     padding-bottom: 16px;
   }
 }
