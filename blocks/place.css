@@ -174,11 +174,11 @@
         height: auto;
     }
 
-    .place__artist_title {
+    .place__artist-title {
         font-size: 10px;
     }
 
-    .place__artist_name {
+    .place__artist-name {
         font-size: 16px;
         line-height: 20px;
     }
@@ -189,7 +189,7 @@
         padding-bottom: 20px;
     }
 
-    .place__button_nft {
+    .place__button-nft {
         padding: 10px 15px;
         font-size: 12px;
         width: 100%;
