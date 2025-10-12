@@ -1,13 +1,13 @@
 .footer {
-    min-height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__copyright {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 400;
-    margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 0;
 }
