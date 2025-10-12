@@ -45,7 +45,7 @@
   align-self: flex-end;
 }
 
-.place__artist_title {
+.place__artist-title {
   font-family: Inter;
   font-weight: 400;
   font-size: 12px;
@@ -55,7 +55,7 @@
   color: #aaaaaa;
 }
 
-.place__artist_name {
+.place__artist-name {
   font-family: Inter;
   font-weight: 400;
   font-size: 18px;
@@ -84,7 +84,7 @@
   padding-bottom: 25px;
 }
 
-.place__button_nft {
+.place__button-nft {
   grid-area: button_nft;
 
   width: fit-content;
@@ -107,7 +107,8 @@
 
   box-shadow: 5px 5px 10px 0px #00000040;
 }
-.place__button_nft:hover {
+
+.place__button-nft:hover {
   background: linear-gradient(
     90deg,
     rgba(2, 120, 254, 0.25) 0%,
